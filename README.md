@@ -1,6 +1,6 @@
-# flutter_application_1
+# dev-quiz
 
-A new Flutter project.
+Minha primeira aplicação em flutter, aprendendo com a NLW da rocketseat, porém melhorando alguns pontos de usabilidade e fazendo da minha maneira algumas partes de código
 
 ## Getting Started
 
