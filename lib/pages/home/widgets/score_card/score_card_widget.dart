@@ -1,12 +1,12 @@
 import 'package:DevQuiz/core/core.dart';
-import 'package:DevQuiz/home/widgets/chart/chart_widget.dart';
+import 'package:DevQuiz/pages/home/widgets/chart/chart_widget.dart';
 import 'package:flutter/material.dart';
 
 class ScoreCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.symmetric(horizontal: 16),
         child: Container(
           decoration: BoxDecoration(
               color: Colors.white, borderRadius: BorderRadius.circular(16)),

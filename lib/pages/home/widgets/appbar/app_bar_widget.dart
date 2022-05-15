@@ -1,4 +1,4 @@
-import 'package:DevQuiz/home/widgets/score_card/score_card_widget.dart';
+import 'package:DevQuiz/pages/home/widgets/score_card/score_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:DevQuiz/core/core.dart';
 
@@ -14,7 +14,7 @@ class AppBarWidget extends PreferredSize {
               child: Stack(children: [
                 Container(
                     height: 160,
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     width: double.maxFinite,
                     decoration: BoxDecoration(gradient: AppGradients.linear),
                     child: Align(

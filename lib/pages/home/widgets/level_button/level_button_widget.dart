@@ -55,15 +55,18 @@ class LevelButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      constraints: BoxConstraints(minWidth: 90),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(28),
           border: Border.fromBorderSide(BorderSide(color: borderColor)),
           color: backgroundColor),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 6),
-        child: Text(
-          label,
-          style: GoogleFonts.notoSans(color: textColor, fontSize: 13),
+        child: Center(
+          child: Text(
+            label,
+            style: GoogleFonts.notoSans(color: textColor, fontSize: 13),
+          ),
         ),
       ),
     );
