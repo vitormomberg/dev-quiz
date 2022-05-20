@@ -1,13 +1,14 @@
 import 'package:DevQuiz/pages/home/widgets/score_card/score_card_widget.dart';
+import 'package:DevQuiz/shared/models/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:DevQuiz/core/core.dart';
 
-String imgUserProfile =
-    "https://media-exp1.licdn.com/dms/image/C4D03AQEduo5iSUYpng/profile-displayphoto-shrink_100_100/0/1635547749477?e=1657756800&v=beta&t=NgAhPgL9JYPQH23G1igCuW0c2gIprixGFt1zCJIHPzM";
-
 class AppBarWidget extends PreferredSize {
-  AppBarWidget()
-      : super(
+  final UserModel user;
+
+  AppBarWidget({
+    required this.user,
+  }) : super(
             preferredSize: Size.fromHeight(250),
             child: Container(
               height: 250,
@@ -27,7 +28,7 @@ class AppBarWidget extends PreferredSize {
                               style: AppTextStyles.title,
                               children: [
                                 TextSpan(
-                                  text: "Vitor",
+                                  text: user.name,
                                   style: AppTextStyles.titleBold,
                                 )
                               ])),
@@ -37,7 +38,7 @@ class AppBarWidget extends PreferredSize {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
                                   image: DecorationImage(
-                                    image: NetworkImage(imgUserProfile),
+                                    image: NetworkImage(user.photoURL),
                                   )))
                         ],
                       ),
